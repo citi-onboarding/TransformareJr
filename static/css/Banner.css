@@ -1,0 +1,150 @@
+body{
+    margin: 0px;
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/static/imagens/banner.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+}
+.menu ul{
+    /*display none pra desaparecer as coisas*/
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+    list-style: none;
+    float: right;
+    width: 332px;
+}
+.menu ul li{
+    display: inline;
+}
+.menu ul li a{
+    padding-right: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffff;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+}
+.logomarca{
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+}
+
+#logo{
+    margin: 20px 0 20px 40px;
+    width: 74px;
+    float: left;
+}
+.text{
+    margin-top: 73px;
+    color: #ffff;
+    font-size: 54px;
+    font-weight: 400;
+    font-family:'Source Sans Pro', sans-serif;
+    text-align: center;
+    top: 41%;
+    left: 21%;
+    width: 59%;
+}
+.style{
+    margin-right: 4px;
+    margin-left: 3px;
+    font-family:'Putumayo', sans-serif;
+    font-size: 24px;
+    color: #ffff;
+}
+.style2{
+    font-family: 'Putumayo', sans-serif;
+    font-size: 27px;
+    color: #ffff;
+}
+@font-face{
+    font-family: Putumayo;
+    src: url('Putumayo.ttf');
+}
+.button_banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 124px;
+    height: 30px;
+    background-color:rgba(8,162,132,1.8);
+    color: #ffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    border-radius: 3px;
+    margin-top: 40px;
+    text-decoration: none;
+}
+.button_banner a{
+    width: 124px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: #ffff;
+}
+@media(max-width: 768px){
+    .text{
+    width: 77%;   
+    }
+}
+@media(max-width: 414px){
+    .menu{
+        display: none;
+    }
+    .text{
+        font-size: 30px;   
+    }
+    #logo{
+        margin: 20px 0 20px 20px;
+        width: 70px;
+    }
+    .style{
+        font-size: 24px;
+    }
+    .style2{
+        font-size: 27px;
+    }
+}
+@media(max-width: 320px){
+    .text{
+        font-size: 25px;   
+    }
+    #logo{
+        margin: 20px 0 20px 20px;
+        width: 57px;
+    }
+    .style{
+        font-size: 21px;
+    }
+    .style2{
+        font-size: 22px;
+    }
+}
+
