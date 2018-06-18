@@ -1,11 +1,11 @@
+/*cor padrão: #08A284*/
 body {
     margin: 0; /*remove a margem do site*/
     font-family: 'Source Sans Pro', sans-serif;
-    /*cor padrão #08A284*/
 }
 
-a:link, a:visited {
-	text-decoration: none;
+a:link, a:visited { 
+	text-decoration: none; /*remove o estilo dos links*/
 }
 
 .cabeçalho {
@@ -15,10 +15,11 @@ a:link, a:visited {
 
 #serviços {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     text-align: center;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(to bottom, #f9f9f9, #ffffff);
 }
 
 .serv-container {
@@ -27,58 +28,58 @@ a:link, a:visited {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding-bottom: 40px;
+    padding-bottom: 40px; /*espaço entre as caixas e o link*/
 }
 
 .serv-box {
     width: 350px;
     height: 420px;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    position: relative;
 }
 
 .serv-imagem {
-    position: absolute;
-    filter: opacity(40%);
     width: 100px;
     height: 100px;
+    position: absolute;
+    filter: opacity(40%);
 }
 
 .serv-titulo {
     position: absolute;
     text-align: center;
-    top: 100px;
     font-weight: 400;
     font-size: 30px;
     line-height: 36px;
+    top: 100px;
 }
 
 .serv-texto {
     position: absolute;
     text-align: center;
-    top: 170px;
     font-weight: 300;
     font-size: 25px;
     line-height: 30px;
+    top: 170px;
 }
 
 .serv-botao {
+    width: 155px;
+    height: 40px;
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #08A284;
-    top: 330px;
-    width: 155px;
-    height: 40px;
     border-radius: 5px;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
     font-weight: 600;
     font-size: 20px;
     color: #ffffff;
+    top: 330px;
 }
 
 .serv-pers {
@@ -87,46 +88,76 @@ a:link, a:visited {
     color: #08A284;
 }
 
-/*slick css*/
-.slick-initialized .slick-slide {
-    float: none;
-    display: inline-block;
-    vertical-align: middle;
+/*SLICK*/
+.serv-container.slick-slider{
+    padding-bottom: 0; /*removendo espaço após o carrossel*/
+}
+
+/*características do slide do carrossel*/
+.serv-box.slick-slide{ 
+    height: 360px;
+    width: 300px; 
+    display: flex; /* mantendo o alinhamento central */
+    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
 }
 
-.slick-slide > h3 {
-    dis
-    text-align: center;
+/*conteudos das caixas de serviço*/
+.serv-box.slick-slide > .serv-imagem{
+    width: 83px;
+    height: 83px;
+} 
+
+.serv-box.slick-slide > .serv-titulo{
+    width: 90%;
+    font-size: 24px;
+    top: 85px;
+} 
+
+.serv-box.slick-slide > .serv-texto{
+    width: 90%;
+    font-size: 20px;
+    top: 130px;
+} 
+
+.serv-box.slick-slide > .serv-botao {
+    width: 140px;
+    height: 36px;
+    font-size: 18px;
+    top: 275px;
 }
 
+/*pontos que indicam a posição*/
+.slick-dots {
+    bottom: -5px; /*espaço entre o carrossel e os pontos*/
+}
 
 .slick-dots li button:before {
+    font-size: 12px; /*tamanho dos pontos*/
     color: #08A284;
 }
 
 .slick-dots li.slick-active button:before {
+    font-size: 12px;
     color: #08A284;
 }
 
-/*reponsive css*/
+/*responsividade*/
 @media screen and (orientation: portrait) {
-    .sp-view {
-      display: flex;
+    .serv-pers-m {
+      display: flex; /*aparecer box serv-personalizados*/
     }
     .serv-pers{
-        display: none;
+        display: none; /*sumir link serv-personalizados*/
     }
 }
 
 @media screen and (orientation: landscape) {
-    .sp-view {
-        display: none;
+    .serv-pers-m {
+        display: none; /*sumir box serv-personalizados*/
     }
     .serv-pers{
-        display: block;
+        display: block; /*aparecer link serv-personalizados*/
     }
 }

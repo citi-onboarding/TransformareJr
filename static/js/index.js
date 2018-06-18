@@ -1,19 +1,18 @@
 $(window).on('load resize orientationchange', function () {
     $('.serv-container').each(function () {
         var $carousel = $(this);
-        /* Initializes a slick carousel only on mobile screens */
-        // slick on mobile
+        // ativa o slick apenas em telas que width < height
         if ($(window).width() > $(window).height()) {
             if ($carousel.hasClass('slick-initialized')) {
                 $carousel.slick('unslick');
             }
-        }
-        else {
+        } else {
             if (!$carousel.hasClass('slick-initialized')) {
                 $carousel.slick({
-                    dots: true,
-                    arrows: false,
-                    centerMode: true,
+                    dots: true, // ativa os pontos
+                    arrows: false,  // remove as setas
+                    slidesToShow: 1, // mostra 1 card por vez
+                    slidesToScroll: 1, // passa 1 card por vez
                 });
             }
         }
