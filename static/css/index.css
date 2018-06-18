@@ -105,8 +105,8 @@ body {
 .icones-mvv {
     margin: auto;
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 34%;
+    height: auto;
 }
 
 .icones-mvv-img {
