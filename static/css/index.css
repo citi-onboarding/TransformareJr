@@ -105,8 +105,8 @@ body {
 .icones-mvv {
     margin: auto;
     position: relative;
-    width: 34%;
-    height: auto;
+    width: 100px;
+    height: 100px;
 }
 
 .icones-mvv-img {
@@ -125,6 +125,155 @@ body {
     font-weight: 300;
     font-size: 22px;
 }
+.divisao-contatos-flooter{
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+.flooter{
+    background-color: #fff;
+    flex-direction: row; 
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+    justify-content: space-around;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 2%; 
+    width: 100%;
+    height: auto;
+}
+.logo{
+    order:0;
+    justify-content: center;
+    align-items: center
+}
+.logo-img{
+    max-width:180px;
+    max-height:180px;
+    width: auto;
+    height: auto;
+    padding-left: 20%;
+}
+.contato{
+    order:3;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: left;
+    letter-spacing: -2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-texto-contatos{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+}
+.contatos-img{
+    width: 28.98px;
+    height: 30px;
+}
+.texto-contatos{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: justify;
+    letter-spacing: -2%;
+    font-weight: 400;
+    padding-left: 5%; 
+}
+.mapa-todo{
+    display: flex;
+    flex-direction: column;
+    order:-1;
+}
+.endereco{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.localizacao{
+    order: 1;
+}
+.localizacao-img{
+    display: none;
+}
+.frase-logo{
+    order: 2;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: left;
+    letter-spacing: -2%;
+    X: 91.77px;
+    Y: 220px;
+    width: 344.85px;
+    height:52px;
+}
+
+#frase-logo{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300 italic;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.Copyright{
+    order:5;
+    background-color: #D2E2DF;
+    width:100%;
+    height:5%;
+}
+
+.texto-copyright{
+    font-family: 'Open Sans', sans-serif;
+   font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: left;
+    padding-left: 8%;
+    padding-right: 8%; 
+
+}
+.fundo-img{
+    max-width:462.7px;
+    max-height:142px;
+
+}
+.mapa-img{
+    padding-top: 80%;
+    max-width:20.37px;
+    max-height:20.58px;
+}
+
+.frase-endereco{
+    order: 2;
+    width: 344.85px;
+    height: 52px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: left;
+    letter-spacing: -2%;
+    padding-left: 2%;
+}
+
+.texto-endereco{
+    display: none;
+}
 
 @media (orientation:portrait) {
     .sessao-frase-destacada {
@@ -134,3 +283,58 @@ body {
     .blocos-mvv {
         width: 100%;
     }
+    .flooter{
+        display: flex;
+        flex-direction: row;
+    }
+    .mapa-todo{
+        display: none;
+    }
+    .Copyright{
+        order:5;
+        background-color: #D2E2DF;
+        width:100%;
+        height:5%;
+        line-height: 20px; 
+    }
+    .texto-copyright{
+        font-size: 14px;
+    }
+
+    .localizacao-img{
+        display: flex;
+        width: 28.98px;
+        height: 30px;
+
+    }
+    .texto-contatos{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .texto-endereco{
+        display: flex;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        letter-spacing: -3%;
+        font-weight: 400;
+        padding-left: 5%; 
+        text-align: left;
+        /* padding-top: 8%; */
+    }
+    .img-texto-contatos{
+        padding-top:8;
+        padding-left:4%;
+    }
+    .logo-img{
+        align-items: center;
+        max-width:115.53px;
+        max-height:127px;
+        width: auto;
+        height: auto;
+        padding-left: 30%;  
+    }
+    .frase-logo{
+        font-size: 14px;
+    }
+}
