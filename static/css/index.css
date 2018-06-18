@@ -9,11 +9,14 @@ a:link, a:visited {
 	text-decoration: none; /*remove o estilo dos links*/
 }
 
-/* SERVIÇOS */
-.cabeçalho {
+.cabeçalho-seçao {
     font-weight: 600;
     font-size: 45px;
+    text-align: center;
+    letter-spacing: -2%;
 }
+
+/* SERVIÇOS */
 
 #serviços {
     width: 100%;
@@ -145,25 +148,6 @@ a:link, a:visited {
     color: #08A284;
 }
 
-/*responsividade*/
-@media screen and (orientation: portrait) {
-    .serv-pers-m {
-      display: flex; /*aparecer box serv-personalizados*/
-    }
-    .serv-pers{
-        display: none; /*sumir link serv-personalizados*/
-    }
-}
-
-@media screen and (orientation: landscape) {
-    .serv-pers-m {
-        display: none; /*sumir box serv-personalizados*/
-    }
-    .serv-pers{
-        display: block; /*aparecer link serv-personalizados*/
-    }
-}
-
 /* FRASE E SOBRE NÓS */
 .flex-container {
     position: relative;
@@ -229,13 +213,6 @@ a:link, a:visited {
     background: linear-gradient(to bottom, #f9f9f9, #fff);
 }
 
-#titulo-sobrenos {
-    font-size: 38px;
-    font-weight: 700;
-    text-align: center;
-    letter-spacing: -2%;
-}
-
 #texto-sobrenos {
     text-align: center;
     font-size: 22px;
@@ -283,7 +260,14 @@ a:link, a:visited {
     font-size: 22px;
 }
 
-@media (orientation:portrait) {
+/*RESPONSIVIDADE*/
+@media screen and (orientation: portrait) {
+    .serv-pers-m {
+      display: flex; /*aparecer box serv-personalizados*/
+    }
+    .serv-pers{
+        display: none; /*sumir link serv-personalizados*/
+    }
     .sessao-frase-destacada {
         display: none;
     }
@@ -291,3 +275,13 @@ a:link, a:visited {
     .blocos-mvv {
         width: 100%;
     }
+}
+
+@media screen and (orientation: landscape) {
+    .serv-pers-m {
+        display: none; /*sumir box serv-personalizados*/
+    }
+    .serv-pers{
+        display: block; /*aparecer link serv-personalizados*/
+    }
+}
