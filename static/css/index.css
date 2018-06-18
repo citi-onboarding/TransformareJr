@@ -21,13 +21,13 @@ a:link, a:visited {
     align-items: center;
 }
 
-#serv-container {
+.serv-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 
 .serv-box {
@@ -81,25 +81,52 @@ a:link, a:visited {
     color: #ffffff;
 }
 
-#serv-pers {
+.serv-pers {
     font-size: 20px;
     font-weight: 400;
     color: #08A284;
 }
 
-.mobile-show {
-    display: none;
+/*slick css*/
+.slick-initialized .slick-slide {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.slick-slide > h3 {
+    dis
+    text-align: center;
 }
 
 
-@media (max-width: 1240px){
-    .mobile-show {
-        display: block;
+.slick-dots li button:before {
+    color: #08A284;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #08A284;
+}
+
+/*reponsive css*/
+@media screen and (orientation: portrait) {
+    .sp-view {
+      display: flex;
     }
-    #serv-pers{
+    .serv-pers{
         display: none;
     }
-    .serv-botao {
-        top: 340px;
+}
+
+@media screen and (orientation: landscape) {
+    .sp-view {
+        display: none;
+    }
+    .serv-pers{
+        display: block;
     }
 }
