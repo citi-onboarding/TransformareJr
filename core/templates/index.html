@@ -3,16 +3,61 @@
 <html lang="pt">
 
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="../../static/css/index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Transformare Jr.</title>
-    <link rel="stylesheet" type="text/css" href="{% static "css/index.css" %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'slick/slick.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'slick/slick-theme.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}" />
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
 </head>
 
 <body>
+    <!-- SERVIÇOS -->
+    <div id="serviços">
+        <h1 class="cabeçalho">Serviços</h1>
+        <div class="serv-container">
+            <!-- Assessoria ao Legislativo -->
+            <div class="serv-box">
+                <img class="serv-imagem" src="{% static 'img/ass-leg.png' %}">
+                <h3 class="serv-titulo">Assessoria ao Legislativo</h3>
+                <p class="serv-texto">Acompanhamento Parlamentar, Relações Governamentais e Participação Popular</p>
+                <div class="serv-botao">
+                    <p>Saiba Mais</p>
+                </div>
+            </div>
+            <!-- Assessoria ao Executivo -->
+            <div class="serv-box">
+                <img class="serv-imagem" src="{% static 'img/ass-exec.png' %}">
+                <h3 class="serv-titulo">Assessoria ao Executivo</h3>
+                <p class="serv-texto">Elaboração de Políticas Públicas e Captação de Recursos</p>
+                <div class="serv-botao">
+                    <p>Saiba Mais</p>
+                </div>
+            </div>
+            <!-- Terceiro Setor -->
+            <div class="serv-box">
+                <img class="serv-imagem" src="{% static 'img/ter-setor.png' %}">
+                <h3 class="serv-titulo">Terceiro Setor</h3>
+                <p class="serv-texto">Apoio e desenvolvimento de Organizações da Sociedade Civil (OSCs)</p>
+                <div class="serv-botao">
+                    <p>Saiba Mais</p>
+                </div>
+            </div>
+            <!-- Serviços Personalizados: Mobile -->
+            <div class="serv-box serv-pers-m">
+                <img class="serv-imagem" src="{% static 'img/serv-pers.png' %}">
+                <h3 class="serv-titulo">Serviços Personalizados</h3>
+                <p class="serv-texto">Para demais serviços em consultoria política, governança criativa e administração pública consulte-nos.</p>
+                <div class="serv-botao">
+                    <p>Contate-nos</p>
+                </div>
+            </div>
+        </div>
+        <!-- Serviços Personalizados: Desktop -->
+        <a class="serv-pers" href="">Serviços Personalizados</a>
+    </div>
+    <!-- FRASE E SOBRE NÓS -->
     <div class="flex-container">
         <div class="sessao-frase-destacada">
             <div id="barra-verde"></div>
@@ -58,7 +103,11 @@
             </div>
         </div>
     </div>
-    <script src="{% static "js/index.js" %}"></script>
+    <!-- SLICK/CARROSSEL -->
+    <script type="text/javascript" src="{% static 'slick/jquery-1.11.0.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'slick/jquery-migrate-1.2.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'slick/slick.min.js' %}"></script>
+    <script src="{% static 'js/index.js' %}"></script>
 </body>
 
 </html>
