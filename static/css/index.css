@@ -1,290 +1,169 @@
-/*cor padrão: #08A284*/
-body {
-    margin: 0; /*remove a margem do site*/
-    padding: 0px;
+body{
+    margin: 0;
+}
+.back{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 70vh;
+    background: linear-gradient( rgba(255,255,255,.3),rgba(255,255,255,.3)),url("../../static/img/contato.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
     font-family: 'Source Sans Pro', sans-serif;
-}
-
-a:link, a:visited { 
-	text-decoration: none; /*remove o estilo dos links*/
-}
-
-.cabeçalho-seçao {
     font-weight: 600;
-    font-size: 45px;
+    color: #000000;
     text-align: center;
-    letter-spacing: -2%;
+    font-size: 31px;
 }
-
-/* SERVIÇOS */
-
-#serviços {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to bottom, #f9f9f9, #ffffff);
-    margin-bottom: 6%;
-}
-
-.serv-container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding-bottom: 40px; /*espaço entre as caixas e o link*/
-}
-
-.serv-box {
-    width: 350px;
-    height: 420px;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-}
-
-.serv-imagem {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    filter: opacity(40%);
-}
-
-.serv-titulo {
-    position: absolute;
-    text-align: center;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 36px;
-    top: 100px;
-}
-
-.serv-texto {
-    position: absolute;
-    text-align: center;
-    font-weight: 300;
-    font-size: 25px;
-    line-height: 30px;
-    top: 170px;
-}
-
-.serv-botao {
-    width: 155px;
-    height: 40px;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #08A284;
-    border-radius: 5px;
-    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
-    font-weight: 600;
-    font-size: 20px;
-    color: #ffffff;
-    top: 330px;
-}
-
-.serv-pers {
-    font-size: 20px;
-    font-weight: 400;
-    color: #08A284;
-}
-
-/*slick*/
-.serv-container.slick-slider{
-    padding-bottom: 0; /*removendo espaço após o carrossel*/
-}
-
-/*características do slide do carrossel*/
-.serv-box.slick-slide{ 
-    height: 360px;
-    width: 300px; 
-    display: flex; /* mantendo o alinhamento central */
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-}
-
-/*conteudos das caixas de serviço*/
-.serv-box.slick-slide > .serv-imagem{
-    width: 83px;
-    height: 83px;
-} 
-
-.serv-box.slick-slide > .serv-titulo{
-    width: 90%;
-    font-size: 24px;
-    top: 85px;
-} 
-
-.serv-box.slick-slide > .serv-texto{
-    width: 90%;
-    font-size: 20px;
-    top: 130px;
-} 
-
-.serv-box.slick-slide > .serv-botao {
-    width: 140px;
-    height: 36px;
-    font-size: 18px;
-    top: 275px;
-}
-
-/*pontos que indicam a posição*/
-.slick-dots {
-    bottom: -5px; /*espaço entre o carrossel e os pontos*/
-}
-
-.slick-dots li button:before {
-    font-size: 12px; /*tamanho dos pontos*/
-    color: #08A284;
-}
-
-.slick-dots li.slick-active button:before {
-    font-size: 12px;
-    color: #08A284;
-}
-
-/* FRASE E SOBRE NÓS */
-.flex-container {
-    position: relative;
+.container{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    background-color: #000;
-}
-
-.sessao-frase-destacada {
-    position: relative;
-    display: flex;
-    width: 100%;
-    height: auto;
-    background: linear-gradient(to bottom, #f9f9f9, #fff);
+    justify-content: center;
     align-items: center;
-    justify-content: center;
+    margin-top: 90px;
+    width: 60%;
 }
-
-#barra-verde {
-    height: 100%;
-    width: 1vw;
-    background-color: #008269;
-}
-
-.quote {
+.form1{
     display: flex;
-    width: 100%;
-    height: 2.5cm;
-    position: relative;
-    justify-content: center;
-    padding: 5px;
-    margin-bottom: 2cm;
-    margin-top: 2cm;
+    flex-direction: column;
+    margin-right: 25px;
+    width: 50%;
 }
-
-#quote-mark {
-    position: relative;
-    height: 100%;
-    width: auto;
-}
-
-#quote-mark-img {
-    position: relative;
-    height: 100%;
-}
-
-#frase-destacada {
-    color: #008269;
-    text-align: left;
-    letter-spacing: -2%;
-    font-size: 36px;
-    text-shadow: 1px 1px 1px #eee;
-    font-weight: 600;
-    margin-left: 1%;
-}
-
-.sessao-sobrenos {
-    padding-left: 8%;
-    padding-right: 8%;
-    padding-top: 4%;
-    padding-bottom: 4%;
-    width: 100%;
-    height: auto;
-    background: linear-gradient(to bottom, #f9f9f9, #fff);
-}
-
-#texto-sobrenos {
-    text-align: center;
-    font-size: 22px;
-    letter-spacing: -2%;
-    margin-bottom: 6%;
-}
-
-.mvv {
+.form2{
     display: flex;
-    flex-wrap: wrap;
-    height: auto;
-    width: auto;
-    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
 }
 
-.blocos-mvv {
-    flex-wrap: wrap;
-    width: 270px;
-    height: auto;
-    padding: 2%;
-    margin: 2%;
-    text-align: center;
-    align-content: center;
-}
-
-.icones-mvv {
-    margin: auto;
-    position: relative;
-    width: 34%;
-    height: auto;
-}
-
-.icones-mvv-img {
+.user{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
     width: 100%;
+    height: 28px;
+    border-radius: 4px;
+    color: #000000;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-indent: 10px;
+    border: none;
+    box-shadow: 1px 1px 1px 1px #cdcdb1;
+   
 }
-
-.titulo-blocos-mvv {
-    letter-spacing: -2%;
+.user2{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+    width: 100%;
+    height: 28px;
+    border-radius: 4px;
+    color: #000000;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-indent: 10px;
+    border: none;
+    box-shadow: 1px 1px 1px 1px #cdcdb1;
+}
+.user3{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+    width: 100%;
+    height: 116px;
+    border-radius: 4px;
+    color: #000000;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-indent: 10px;
+    border: none;
+    box-shadow: 1px 1px 1px 1px #cdcdb1;
+    resize: none;
+}
+::-webkit-input-placeholder{
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
-    font-size: 28px;
+    color: #646464;
+    text-indent: 10px;
+    font-size: 90%;
+}
+.button_submit{
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.botao{
+    background-color:rgba(8,162,132,1.8);
+    border: none;
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    width: 93px;
+    height: 30px;
+    border-radius: 4px;
+    float: right;
+    text-align: center;
+}
+textarea{
+    padding: 10px 0 0 0;
+    outline: none;
+}
+input{
+    outline: none;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
-.texto-blocos-mvv {
-    font-weight: 300;
-    font-size: 22px;
-}
+/*RESPONSIVIDADE CONTATO*/
 
-/*RESPONSIVIDADE*/
-@media screen and (orientation: portrait) {
-    .serv-pers-m {
-      display: flex; /*aparecer box serv-personalizados*/
+@media(orientation:portrait){      
+    .back{
+        height: 80vh;
     }
-    .serv-pers{
-        display: none; /*sumir link serv-personalizados*/
+    .container{
+        flex-direction: column;
+        width: 66%;
+        margin-top: 43px;
     }
-    .sessao-frase-destacada {
-        display: none;
-    }
-    
-    .blocos-mvv {
+    .form1{
+        display: flex;
+        flex-direction: column;
+        margin-left: 25px;
         width: 100%;
     }
-}
-
-@media screen and (orientation: landscape) {
-    .serv-pers-m {
-        display: none; /*sumir box serv-personalizados*/
+    .form2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
-    .serv-pers{
-        display: block; /*aparecer link serv-personalizados*/
+    .user{
+        margin-bottom: 8px;
+        height: 81px;
+    }
+    .user2{
+        margin-bottom: 9px;
+        height: 81px;
+    }
+    .user3{
+        height: 126px;
+    }
+    .button_submit{
+        display: flex;
+        justify-content: center;
+        width: 66%;
+        margin-bottom: 32px;
     }
 }
