@@ -5,8 +5,9 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-a:link, a:visited { 
+a { 
     text-decoration: none; /*remove o estilo dos links*/
+    color: inherit;
 }
 
 .cabeçalho-seçao {
@@ -264,6 +265,8 @@ a:link, a:visited {
 }
 
 
+/* MODAIS */
+
 #bg1{
     width: 100%;
     height: 100%;
@@ -445,9 +448,6 @@ button {
     width: 100%;
     position: absolute;
 }
-
-
-
 
 /*RESPONSIVIDADE*/
 @media screen and (orientation: portrait) {
