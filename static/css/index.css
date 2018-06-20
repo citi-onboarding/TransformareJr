@@ -48,6 +48,7 @@ ul li a{
     font-weight: 600;
     font-size: 18px;
     color: #ffff;
+    text-decoration-color: #ffffff;
 }
 .navbar{
     width: 100%;
@@ -94,7 +95,7 @@ ul li a{
 }
 @font-face{
     font-family: Putumayo;
-    src: url('Putumayo.ttf');
+    src: url('../../static/img/Putumayo.ttf');
 }
 .button_banner{
     display: flex;
@@ -117,6 +118,7 @@ ul li a{
     display: block;
     text-decoration: none;
     color: #ffff;
+    text-decoration-color: #ffffff;
 }
  
 @media(orientation: portrait),(max-width: 710px){
@@ -130,7 +132,7 @@ ul li a{
     .style2{
         font-size: 22px;
     }
-    .text{
+    #text_banner{
         font-size: 35px;  
     }
     ul{
