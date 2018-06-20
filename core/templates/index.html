@@ -13,27 +13,101 @@
 </head>
 
 <body>
-      <!--SEÇÃO DE CONTATO-->
-        <div class= "back">
-            <div class="text">Contato</div>
-            <form class="formulario" autocomplete="off">
-                    <div class="container">
-                        <div class="form1">
-                            <input class="user" type="text" name="nome" placeholder="Nome" id = "nome">
-                            <input class="user" type="text" name="email" placeholder="Email" id="email">
-                            <input class="user" type="text" name="telefone" placeholder="Telefone" id="telefone">
-                            <input class="user" type="text" name="conheceu" placeholder="Como conheceu a Transformare Jr.?" id="conheceu">
-                        </div>
-                        <div class="form2">
-                            <input class="user2" type="text" name="assunto" placeholder="Assunto">
-                            <textarea class="user3" type="text" name="mensagem" placeholder="Mensagem"></textarea>
-                        </div>
+    <!-- SERVIÇOS -->
+    <div id="serviços">
+        <h1 class="cabeçalho-seçao">Serviços</h1>
+        <div class="serv-container">
+            <!-- Assessoria ao Legislativo -->
+            <div class="serv-box">
+                <img class="serv-imagem" src="{% static 'img/ass-leg.png' %}">
+                <h3 class="serv-titulo">Assessoria ao Legislativo</h3>
+                <p class="serv-texto">Acompanhamento Parlamentar, Relações Governamentais e Participação Popular</p>
+                <div class="serv-botao">
+                    <p>Saiba Mais</p>
+                </div>
+            </div>
+            <!-- Assessoria ao Executivo -->
+            <div class="serv-box">
+                <img class="serv-imagem" src="{% static 'img/ass-exec.png' %}">
+                <h3 class="serv-titulo">Assessoria ao Executivo</h3>
+                <p class="serv-texto">Elaboração de Políticas Públicas e Captação de Recursos</p>
+                <div class="serv-botao">
+                    <p>Saiba Mais</p>
+                </div>
+            </div>
+            <!-- Terceiro Setor -->
+            <div class="serv-box">
+                <img class="serv-imagem" src="{% static 'img/ter-setor.png' %}">
+                <h3 class="serv-titulo">Terceiro Setor</h3>
+                <p class="serv-texto">Apoio e desenvolvimento de Organizações da Sociedade Civil (OSCs)</p>
+                <div class="serv-botao">
+                    <p>Saiba Mais</p>
+                </div>
+            </div>
+            <!-- Serviços Personalizados: Mobile -->
+            <div class="serv-box serv-pers-m">
+                <img class="serv-imagem" src="{% static 'img/serv-pers.png' %}">
+                <h3 class="serv-titulo">Serviços Personalizados</h3>
+                <p class="serv-texto">Para demais serviços em consultoria política, governança criativa e administração pública consulte-nos.</p>
+                <div class="serv-botao">
+                    <p>Contate-nos</p>
+                </div>
+            </div>
+        </div>
+        <!-- Serviços Personalizados: Desktop -->
+        <a class="serv-pers" href="">Serviços Personalizados</a>
+    </div>
+    <!-- FRASE E SOBRE NÓS -->
+    <div class="flex-container">
+        <div class="sessao-frase-destacada">
+            <div id="barra-verde"></div>
+            <div class="quote">
+                <div id="quote-mark">
+                    <img src="../../static/img/quote.png" alt="quote" id="quote-mark-img">
+                </div>
+                <div id="frase-destacada">Pensar, empreender <br> e transformar.</div>
+            </div>
+        </div>
+        <div class="sessao-sobrenos">
+            <h1 class="cabeçalho-seçao">Sobre Nós</h1>
+            <p id="texto-sobrenos">
+                Nós somos uma consultoria com soluções inovadoras, capacitações e treinamentos baseados em fundamentos de Governança Social para o Impacto Social. Para tal, investimos em ações que englobam e conectam a sociedade. <br><br> A Transformare Jr é organizada por alunos do Curso de Ciências do Estado da Universidade Federal de Minas Gerais (UFMG), o qual criado no ano de 2009, foca em formar atores capazes de transformar e ampliar o diálogo das instituições do governo com a sociedade. </p>
+            <div class="mvv">
+                <div class="blocos-mvv" id="missao">
+                    <div class="icones-mvv">
+                        <img src="../../static/img/target.png" alt="missão" class="icones-mvv-img">
                     </div>
-                    <div class="button_submit">
-                        <input class="botao" type="submit">
+                    <h1 class="titulo-blocos-mvv">MISSÃO</h1>
+                    <p class="texto-blocos-mvv">
+                        Transformar realidades oferecendo soluções inovadoras e de qualidade, impactando, através do empreendedorismo social, o meio em que estamos inseridos.
+                    </p>
+                </div>
+                <div class="blocos-mvv" id="visao">
+                    <div class="icones-mvv">
+                        <img src="../../static/img/lighthouse.png" alt="visão" class="icones-mvv-img">
                     </div>
-            </form>
-        </div>        
+                    <h1 class="titulo-blocos-mvv">VISÃO</h1>
+                    <p class="texto-blocos-mvv">
+                        Até 2019, regularizar a Transformare e fechar pelo menos um projeto.
+                    </p>
+                </div>
+                <div class="blocos-mvv" id="valores">
+                    <div class="icones-mvv">
+                        <img src="../../static/img/badge.png" alt="valores" class="icones-mvv-img">
+                    </div>
+                    <h1 class="titulo-blocos-mvv">VALORES</h1>
+                    <p class="texto-blocos-mvv">
+                        Compromisso com atores e resultados; Olhar Júnior; Somos um só; Impacto Social; Vai lá e faz
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SLICK/CARROSSEL -->
+    <script type="text/javascript" src="{% static 'slick/jquery-1.11.0.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'slick/jquery-migrate-1.2.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'slick/slick.min.js' %}"></script>
+    <script src="{% static 'js/index.js' %}"></script>
 </body>
 
 </html>
