@@ -12,6 +12,8 @@ a {
 .cabeçalho {
     font-weight: 600;
     font-size: 45px;
+    margin-top: 0;
+    padding-top: 7%;
 }
 
 #serviços {
@@ -251,7 +253,31 @@ a {
     -webkit-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
     transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
   }
-  
+
+  .modal-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .botao-modal{
+    width: 155px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #08A284;
+    border-radius: 5px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    font-weight: 600;
+    font-size: 18px;
+    color: #ffffff;
+    align-self:center;
+  }
+
+
   .modal__content > h1 {
     text-align: center;
   }
@@ -267,7 +293,9 @@ a {
     z-index: 1100;
     cursor: pointer;
   }
-
+  .texto-modal{
+      font-weight: 300;
+  }
   /* BOTÃO PARA OS MODAIS */
   .modal__trigger {
     position: absolute;
@@ -314,8 +342,11 @@ a {
   }
   .subtitulo-modal{
     color: #08A284;
+    font-weight:400; 
   }
-  
+  .titulo-modal{
+      font-weight: 600;
+  }
 @media (max-width: 640px) {
     .demo-btns .modal__trigger {
       margin-bottom: 0.8rem;
@@ -326,7 +357,7 @@ a {
     top: 0;
     right: 0;
     margin: 1.2rem;
-    padding: 0.6rem;
+    padding: 0.1rem;
     background: rgba(0,0,0,0.3);
     border-radius: 50%;
     -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
@@ -359,7 +390,9 @@ a {
             transform: rotate(180deg) scale(1.1);
   }
   
-
+.titulo-modal{
+    font-size: 20px;
+}
 
 /*responsividade*/
 @media screen and (orientation: portrait) {
