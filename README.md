@@ -10,7 +10,7 @@ Assim, para executá-lo é necessário cumprir os seguintes requisitos:
 
   1. Instalar o [Python](https://www.python.org/downloads/) em seu computador;
   2. Instalar o Django em seu computador, para isso abra o terminal e digite: ```$ pip install django```
-  3. Instalar o virtualenv, para isso abra o terminal e digite: ```$ pip install virutalenv```
+  3. Instalar o virtualenv, para isso abra o terminal e digite: ```$ pip install virtualenv```
   4. Baixar o diretório do projeto no GitHub: 
   + O projeto pode ser baixado via Download ZIP ou pode ser obtido através do [Git](https://git-scm.com/downloads) utilizando o comando:
     ```
