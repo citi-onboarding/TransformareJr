@@ -10,6 +10,15 @@
     <link rel="stylesheet" type="text/css" href="{% static 'slick/slick-theme.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}" />
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+        <script>
+        jQuery(document).ready(function($) { 
+            $(".scroll").click(function(event){        
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+            });
+        });
+        </script>
 </head>
 
 <body>
@@ -25,28 +34,28 @@
             </div>
             <ul>
                 <li>
-                    <a href="#Início" class="color_text">Início</a>
+                    <a href="#Início" class=" scroll color_text">Início</a>
                 </li>
                 <li>
-                    <a href="#Serviços" class="color_text">Serviços</a>
+                    <a href="#Servicos" class="scroll color_text">Serviços</a>
                 </li>
                 <li>
-                    <a href="#Sobre Nós" class="color_text">Sobre Nós</a>
+                    <a href="#SobreNos" class="scroll color_text">Sobre Nós</a>
                 </li>
                 <li>
-                    <a href="#Contato" class="color_text">Contato</a>
+                    <a href="#Contato" class="scroll color_text">Contato</a>
                 </li>
             </ul>
         </div>
         <div class="text" id="text_banner"> Transformando o Governo e a Sociedade</div>
         <div class="button_banner">
-            <a href="#Sobre Nós" class="color_text">Conheça-nos</a>
+            <a href="#SobreNos" class=" scroll color_text">Conheça-nos</a>
         </div>
     </div>
 
     <!--SERVIÇOS-->
 
-    <div id="Serviços">
+    <div id="Servicos">
         <h1 class="cabeçalho-seçao">Serviços</h1>
         <div class="serv-container">
             <!-- Assessoria ao Legislativo -->
@@ -240,7 +249,7 @@
                     <br> e transformar.</div>
             </div>
         </div>
-        <div class="sessao-sobrenos" id="Sobre Nós">
+        <div class="sessao-sobrenos" id="SobreNos">
             <h1 class="cabeçalho-seçao">Sobre Nós</h1>
             <p id="texto-sobrenos">
                 Nós somos uma consultoria com soluções inovadoras, capacitações e treinamentos baseados em fundamentos de Governança Social
