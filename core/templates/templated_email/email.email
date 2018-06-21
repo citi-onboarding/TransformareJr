@@ -1,0 +1,11 @@
+{% block subject %}{{assunto}}{% endblock %}
+{% block plain %}
+  Este email foi enviado por: {{nome}} 
+  Conheceu a Transformare Jr.: {{conheceu}}
+  Assunto da mensagem: {{assunto}}
+  Mensagem:{{mensagem}}
+
+  Contatos do Usuário:
+  email: {{email}}
+  telefone: {{telefone}}
+{% endblock %}
