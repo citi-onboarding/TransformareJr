@@ -3,12 +3,13 @@ from .models import *
 # Create your views here.
 def index (request):
     
-    mvv_var = mvv.objects.get()
+    editaveis_var = editavei.objects.get()
     
     context = {
-        'visao': mvv_var.visao,
-        'valores': mvv_var.valores,
-        'missao': mvv_var.missao,
+        'visao': editaveis_var.visao,
+        'valores': editaveis_var.valores,
+        'missao': editaveis_var.missao,
+        'telefone': editaveis_var.telefone,
     }
     
     return render(
