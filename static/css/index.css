@@ -2,6 +2,7 @@ body {
     margin: 0; /*remove a margem do site*/
     padding: 0px;
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
 }
 
 a { 
@@ -11,7 +12,7 @@ a {
 
 .cabeçalho-seçao {
     font-weight: 600;
-    font-size: 45px;
+    font-size: 1.8em;
     text-align: center;
     letter-spacing: -2%;
     margin-top: 0;
@@ -33,7 +34,7 @@ a {
     align-items: center;
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 85vh;
     background: linear-gradient( rgba(0,0,0,.3),rgba(0,0,0,.3)),url("../../static/img/banner.jpg");
     background-size: cover;
     background-position: center center;
@@ -62,9 +63,8 @@ ul li a{
     padding-right: 10px;
     display: inline-block;
     text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 0.75em;
     color: #ffff;
     text-decoration-color: #ffffff;
 }
@@ -92,24 +92,22 @@ ul li a{
     justify-content: center;
     margin-top: 73px;
     color: white;
-    font-size: 54px;
+    font-size: 2em;
     font-weight: 400;
     font-family:'Source Sans Pro', sans-serif;
     text-align: center;
-    top: 41%;
-    left: 21%;
-    width: 59%;
+    width: 60%;
 }
 .style{
     margin-right: 4px;
     margin-left: 3px;
     font-family:'Putumayo', sans-serif;
-    font-size: 24px;
+    font-size: 1em;
     color: #ffff;
 }
 .style2{
     font-family: 'Putumayo', sans-serif;
-    font-size: 27px;
+    font-size: 1.1em;
     color: #ffff;
 }
 @font-face{
@@ -121,13 +119,13 @@ ul li a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 124px;
-    height: 30px;
+    width: 4cm;
+    height: 1cm;
     background-color:rgba(8,162,132,1.8);
     color: #ffff;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 600;
-    border-radius: 3px;
+    font-weight: 400;
+    font-size: 0.9em;
+    border-radius: 5px;
     margin-top: 40px;
     text-decoration: none;
 }
@@ -200,8 +198,7 @@ ul li a{
     position: absolute;
     text-align: center;
     font-weight: 400;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 1.2em;
     top: 100px;
 }
 
@@ -209,20 +206,19 @@ ul li a{
     position: absolute;
     text-align: center;
     font-weight: 300;
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 0.9em;
     top: 170px;
 }
 
 .serv-botao {
-    width: 155px;
-    height: 40px;
+    width: 4cm;
+    height: 1cm;
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 0.9em;
     color: #ffffff;
     top: 330px;
 }
@@ -255,9 +251,8 @@ ul li a{
     width: 100%;
     height: 0;
     border-radius: 0;
-    font-weight: 600;
-    font-size: 20px;
     font-weight: 400;
+    font-size: 0.9em;
     color: #08A284;
     text-align: center;
 }
@@ -418,8 +413,8 @@ ul li a{
     background-color: #08A284;
     border-radius: 5px;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 0.9em;
     color: #ffffff;
     align-self:center;
   }
@@ -459,11 +454,12 @@ ul li a{
             user-select: none;
     -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
     transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-    width: 155px;
-    height: 40px;
+    width: 4cm;
+    height: 1cm;
     border-radius: 5px;
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 400;
+    font-size: 0.9em;
   }
   .modal__trigger--active {
     z-index: 10;
@@ -511,7 +507,7 @@ ul li a{
     transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   }
   .demo-close svg {
-    width: 24px;
+    width: 2rem;
     fill: #fff;
     pointer-events: none;
     vertical-align: top;
@@ -538,7 +534,7 @@ ul li a{
   }
   
 .titulo-modal{
-    font-size: 20px;
+    font-size: 1.2em;
 }
 
 /*RESPONSIVIDADE*/
@@ -612,7 +608,7 @@ ul li a{
     color: #008269;
     text-align: left;
     letter-spacing: -2%;
-    font-size: 36px;
+    font-size: 1.5em;
     text-shadow: 1px 1px 1px #eee;
     font-weight: 600;
     margin-left: 1%;
@@ -630,7 +626,7 @@ ul li a{
 
 #texto-sobrenos {
     text-align: center;
-    font-size: 22px;
+    font-size: 0.9em;
     letter-spacing: -2%;
     margin-bottom: 6%;
 }
@@ -667,12 +663,12 @@ ul li a{
 .titulo-blocos-mvv {
     letter-spacing: -2%;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 1.2em;
 }
 
 .texto-blocos-mvv {
     font-weight: 300;
-    font-size: 22px;
+    font-size: 0.9em;
 }
 
 /*RESPONSIVIDADE*/
@@ -718,17 +714,18 @@ ul li a{
     background-position: center center;
     background-repeat: no-repeat;
 }
+/*
 .text{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
-    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 600;
     color: #000000;
     text-align: center;
     font-size: 45px;
 }
+*/
 .container{
     display: flex;
     flex-direction: row;
@@ -757,7 +754,6 @@ ul li a{
     height: 28px;
     border-radius: 4px;
     color: #000000;
-    font-family: 'Source Sans Pro', sans-serif;
     text-indent: 10px;
     border: none;
     box-shadow: 1px 1px 1px 1px #cdcdb1;
@@ -771,7 +767,6 @@ ul li a{
     height: 28px;
     border-radius: 4px;
     color: #000000;
-    font-family: 'Source Sans Pro', sans-serif;
     text-indent: 10px;
     border: none;
     box-shadow: 1px 1px 1px 1px #cdcdb1;
@@ -784,14 +779,12 @@ ul li a{
     height: 116px;
     border-radius: 4px;
     color: #000000;
-    font-family: 'Source Sans Pro', sans-serif;
     text-indent: 10px;
     border: none;
     box-shadow: 1px 1px 1px 1px #cdcdb1;
     resize: none;
 }
 ::-webkit-input-placeholder{
-    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     color: #646464;
     text-indent: 10px;
@@ -803,18 +796,18 @@ ul li a{
     width: 60%;
     margin-top: 20px;
     margin-bottom: 25px;
+    font-weight: 400;
 }
 .botao{
     background-color:rgba(8,162,132,1.8);
     border: none;
     color: #ffffff;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 600;
     width: 93px;
     height: 30px;
     border-radius: 4px;
     float: right;
     text-align: center;
+    font-size: 0.9em;
 }
 textarea{
     padding: 10px 0 0 0;
@@ -869,9 +862,9 @@ form{
         width: 66%;
         margin-bottom: 32px;
     }
-    .text{
-        font-size: 45px;
-    }
+    /*.text{
+        font-size: 0.9em;
+    }*/
 }
 
 /* FOOTER */
