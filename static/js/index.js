@@ -1,3 +1,10 @@
+jQuery(document).ready(function ($) {
+    $(".scroll").click(function (event) {
+        event.preventDefault();
+        $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+    });
+});
+
 $(window).on('load resize orientationchange', function () {
     $('.serv-container').each(function () {
         var $carousel = $(this);

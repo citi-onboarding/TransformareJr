@@ -1,6 +1,6 @@
 body {
     margin: 0; /*remove a margem do site*/
-    padding: 0px;
+    padding: 0;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 24px;
 }
@@ -40,13 +40,6 @@ a {
     background-position: center center;
     background-repeat: no-repeat;
 }
-/*.menu{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    height: 100%;
-}*/
 ul{
     /*display none pra desaparecer as coisas*/
     display: flex;
@@ -69,7 +62,7 @@ ul li a{
     text-decoration-color: #ffffff;
 }
 .navbar{
-    width: 100%;
+    width: 100vw;
     justify-content: space-between;
     position: absolute;
     top: 0;
@@ -379,6 +372,7 @@ ul li a{
   }
   .modal__bg {
     background: rgba(0, 0, 0, 0.6);
+    width: 100vw;
   }
   .modal__dialog {
     max-width: 600px;
@@ -564,12 +558,13 @@ ul li a{
     flex-direction: row;
     flex-wrap: wrap;
     background-color: #000;
+    width: 100vw;
 }
 
 .sessao-frase-destacada {
     position: relative;
     display: flex;
-    width: 100%;
+    width: 100vw;
     height: auto;
     background: linear-gradient(to bottom, #f9f9f9, #fff);
     align-items: center;
@@ -619,7 +614,7 @@ ul li a{
     padding-right: 8%;
     padding-top: 4%;
     padding-bottom: 4%;
-    width: 100%;
+    width: 100vw;
     height: auto;
     background: linear-gradient(to bottom, #f9f9f9, #fff);
 }
@@ -708,13 +703,13 @@ ul li a{
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    height: 70vh;
+    height: 80vh;
     background: linear-gradient( rgba(255,255,255,.3),rgba(255,255,255,.3)),url("../../static/img/contato.jpg");
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 }
-/*
+
 .text{
     display: flex;
     justify-content: center;
@@ -725,20 +720,19 @@ ul li a{
     text-align: center;
     font-size: 45px;
 }
-*/
 .container{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-top: 90px;
-    width: 60%;
+    width: 70%;
 }
 .form1{
     display: flex;
     flex-direction: column;
     margin-right: 25px;
-    width: 50%;
+    width: 55%;
 }
 .form2{
     display: flex;
@@ -751,7 +745,7 @@ ul li a{
     flex-direction: column;
     margin-bottom: 18px;
     width: 100%;
-    height: 28px;
+    height: 40px;
     border-radius: 4px;
     color: #000000;
     text-indent: 10px;
@@ -776,7 +770,7 @@ ul li a{
     flex-direction: column;
     margin-bottom: 18px;
     width: 100%;
-    height: 116px;
+    height: 152px;
     border-radius: 4px;
     color: #000000;
     text-indent: 10px;
@@ -788,12 +782,12 @@ ul li a{
     font-weight: 400;
     color: #646464;
     text-indent: 10px;
-    font-size: 90%;
+    font-size: 17px;
 }
 .button_submit{
     display: flex;
     justify-content: flex-end;
-    width: 60%;
+    width: 70%;
     margin-top: 20px;
     margin-bottom: 25px;
     font-weight: 400;
@@ -825,13 +819,14 @@ form{
     height: 100%;
 }
  /*MEDIA CONTATO*/
-@media(orientation:portrait){      
+@media(orientation:portrait),(max-width:780px){      
     .back{
         height: 80vh;
+        width: 100vh;
     }
     .container{
         flex-direction: column;
-        width: 66%;
+        width: 70%;
         margin-top: 43px;
     }
     .form1{
@@ -847,24 +842,26 @@ form{
     }
     .user{
         margin-bottom: 8px;
-        height: 81px;
+        height: 90%;
     }
     .user2{
         margin-bottom: 9px;
         height: 81px;
+        width: 90%;
     }
     .user3{
         height: 126px;
+        width: 90%;
     }
     .button_submit{
         display: flex;
         justify-content: center;
-        width: 66%;
+        width: 70%;
         margin-bottom: 32px;
     }
-    /*.text{
+    .text{
         font-size: 0.9em;
-    }*/
+    }
 }
 
 /* FOOTER */
@@ -913,15 +910,13 @@ form{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    order:-1;
 }
 .footer-endereco{
     display: flex;
     flex-direction: row;
     align-items: baseline;
 }
-.footer-localizacao{
-}
+
 .localizacao-img{
     display: none;
 }
@@ -956,7 +951,7 @@ form{
 
 .copyright{
     background-color: #D2E2DF;
-    width:100%;
+    width:100vw;
     height:5%;
     padding-top: 5px;
 }
@@ -1005,9 +1000,9 @@ form{
     .footer-mapa{
         display: none;
     }
-    .Copyright{
+    .copyright{
         background-color: #D2E2DF;
-        width:100%;
+        width:100vw;
         height:5%;
         line-height: 20px; 
     }
