@@ -9,6 +9,7 @@ def index (request):
         'visao': editaveis_var.visao,
         'valores': editaveis_var.valores,
         'missao': editaveis_var.missao,
+        'email': editaveis_var.email,
         'telefone': editaveis_var.telefone,
     }
     
