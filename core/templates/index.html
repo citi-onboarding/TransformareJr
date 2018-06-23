@@ -289,14 +289,14 @@
             {% csrf_token %}
             <div class="container">
                 <div class="form1">
-                    <input class="user" type="text" name="nome" placeholder="Nome" id="nome">
-                    <input class="user" type="text" name="email" placeholder="Email" id="email">
-                    <input class="user" type="text" name="telefone" placeholder="Telefone" id="telefone">
-                    <input class="user" type="text" name="conheceu" placeholder="Como conheceu a Transformare Jr.?" id="conheceu">
+                    <input class="user" type="text" name="nome" placeholder="Nome" required="required"  pattern="[\wà-úÀ-Ú ]+[\s]/?[\wà-úÀ-Ú ]*" title="ex: José Silva" id="nome">
+                    <input class="user" type="email" name="email" placeholder="Email" required="required"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="ex: jose@mail.com" id="email">
+                    <input class="user" type="telefone" name="telefone" placeholder="Telefone" required="required" pattern="([0-9]{11})+$"  maxlength = "11" title="ex: 8197896542" id="telefone">
+                    <input class="user" type="text" name="conheceu" placeholder="Como conheceu a Transformare Jr.?" required="required" id="conheceu">
                 </div>
                 <div class="form2">
-                    <input class="user2" type="text" name="assunto" placeholder="Assunto">
-                    <textarea class="user3" type="text" name="mensagem" placeholder="Mensagem"></textarea>
+                    <input class="user2" type="text" name="assunto" placeholder="Assunto" required="required">
+                    <textarea class="user3" type="text" name="mensagem" placeholder="Mensagem" required="required"></textarea>
                 </div>
             </div>
             <div class="button_submit">
