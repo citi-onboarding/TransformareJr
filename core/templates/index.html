@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="{% static 'slick/slick.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'slick/slick-theme.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}" />
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'f-button/mfb.css' %}" />
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
 </head>
 
@@ -16,16 +18,16 @@
 
     <!--BANNER-->
 
-    <div class="banner" id="Início">
+    <div class="banner" id="Inicio">
         <div class="navbar">
             <div class="logomarca">
                 <img src="../../static/img/Logo quadrada.png" id="logo">
                 <span class="style">Transformare</span>
                 <span class="style2">Jr.</span>
             </div>
-            <ul>
+            <ul id="navbar-lista">
                 <li>
-                    <a href="#Início" class=" scroll color_text">Início</a>
+                    <a href="#Inicio" class=" scroll color_text">Início</a>
                 </li>
                 <li>
                     <a href="#Servicos" class="scroll color_text">Serviços</a>
@@ -346,7 +348,7 @@
 
             <div class="img-texto-contatos">
                 <img src="../../static/img/email.png" alt="email" class="contatos-img">
-                <p class="texto-contatos">{{email}}</p>
+                <p class="texto-contatos"><a href="mailto:{{email}}">{{email}}</a></p>
             </div>
 
             <div class="img-texto-contatos">
@@ -364,14 +366,51 @@
             <p>Copyright © 2018 CITi</p>
         </div>
     </div>
-
     </div>
 
-    <!-- SLICK/CARROSSEL -->
+    <!-- F-BUTTON -->
+
+    <ul id="menu-flutuante" class="mfb-component--br mfb-zoomin" data-mfb-toggle="click" data-mfb-state="closed">
+        <li class="mfb-component__wrap">
+          <a class="mfb-component__button--main">
+            <i class="mfb-component__main-icon--resting ion-android-menu"></i>
+            <i class="mfb-component__main-icon--active ion-close-round"></i>
+          </a>
+          <ul class="mfb-component__list">
+            <li>
+              <a href="#Contato" data-mfb-label="Contato" class="mfb-component__button--child">
+                <i class="mfb-component__child-icon ion-android-mail"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#SobreNos" data-mfb-label="Sobre Nós" class="mfb-component__button--child">
+                <i class="mfb-component__child-icon ion-information"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#Servicos" data-mfb-label="Serviços" class="mfb-component__button--child">
+                <i class="mfb-component__child-icon ion-android-settings"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#Inicio" data-mfb-label="Início" class="mfb-component__button--child">
+                <i class="mfb-component__child-icon ion-android-home"></i>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+    <!-- JS -->
     <script src="{% static 'js/jquery-latest' %}" type="text/javascript"></script>
+
+    <script type="text/javascript" src="{% static 'f-button/mfb.js' %}"></script>
+    <script type="text/javascript" src="{% static 'f-button/lib/modernizr.touch.js' %}"></script>
+
     <script type="text/javascript" src="{% static 'slick/jquery-1.11.0.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'slick/jquery-migrate-1.2.1.min.js' %}"></script>
     <script type="text/javascript" src="{% static 'slick/slick.min.js' %}"></script>
+    
     <script src="{% static 'js/index.js' %}"></script>
 </body>
 

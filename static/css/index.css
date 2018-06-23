@@ -40,7 +40,7 @@ a {
     background-position: center center;
     background-repeat: no-repeat;
 }
-ul{
+#navbar-lista {
     /*display none pra desaparecer as coisas*/
     display: flex;
     justify-content: space-between;
@@ -49,10 +49,10 @@ ul{
     float: right;
     width: 332px;
 }
-ul li{
+#navbar-lista li{
     display: inline;
 }
-ul li a{
+#navbar-lista li a{
     padding-right: 10px;
     display: inline-block;
     text-decoration: none;
@@ -145,7 +145,7 @@ ul li a{
     #text_banner{
         font-size: 35px;  
     }
-    ul{
+    #navbar-lista{
         display: none;
     }
 }
@@ -1049,3 +1049,73 @@ form{
         font-size: 14px;
     }
 }
+
+/* F-BUTTON */
+.mfb-component--tl{
+    animation: fromTop 1s 1;
+    -webkit-animation: fromTop 1s 1;
+  }
+  .mfb-component--tr{
+    animation: fromTop 1.3s 1;
+    -webkit-animation: fromTop 1.3s 1;
+  }
+  .mfb-component--br{
+    animation: fromBottom 1.6s 1;
+    -webkit-animation: fromBottom 1.6s 1;
+  }
+  .mfb-component--bl{
+    animation: fromBottom 1.9s 1;
+    -webkit-animation: fromBottom 1.9s 1;
+  }
+  @keyframes fromBottom {
+    0% {
+      transform: translateY(250px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes fromTop {
+    0% {
+      transform: translateY(-250px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @-webkit-keyframes fromBottom {
+    0% {
+      transform: translateY(250px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @-webkit-keyframes fromTop {
+    0% {
+      transform: translateY(-250px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
