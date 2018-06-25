@@ -165,7 +165,7 @@ var Modal = (function () {
             * iterate through the modals and modal contents and triggers to remove their active classes.
       * remove the inline css from the trigger to move it back into its original position.
             */
-
+           
             for (var i = 0; i < len; i++) {
                 modals[i].classList.remove('modal--active');
                 content[i].classList.remove('modal__content--active');
@@ -176,8 +176,11 @@ var Modal = (function () {
 
             // when the temporary div is opacity:1 again, we want to remove it from the dom
             div.addEventListener('transitionend', removeDiv, false);
-
             isOpen = false;
+
+            if (document.getElementsByClassName('closeContact')) {
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            }
 
         }
 
@@ -197,7 +200,7 @@ var Modal = (function () {
             trigger[i].addEventListener('click', getId, false);
             closers[i].addEventListener('click', close, false);
             modalsbg[i].addEventListener('click', close, false);
-        }
+        } 
     };
 
     var init = function () {
@@ -211,5 +214,3 @@ var Modal = (function () {
 }());
 
 Modal.init();
-
-
