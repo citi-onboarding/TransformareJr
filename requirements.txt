@@ -1,0 +1,3 @@
+-r requirements-1.txt
+gunicorn
+psycopg2
