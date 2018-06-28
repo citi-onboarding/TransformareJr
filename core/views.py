@@ -4,7 +4,7 @@ from .models import *
 # Create your views here.
 def index (request):
     
-    editaveis_var = editavei.objects.get()
+    editaveis_var = editavei.objects.first()
     
     context = {
         'visao': editaveis_var.visao,
