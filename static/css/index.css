@@ -85,11 +85,11 @@ a {
     justify-content: center;
     margin-top: 73px;
     color: white;
-    font-size: 2em;
+    font-size: 2.2em;
     font-weight: 400;
     font-family:'Source Sans Pro', sans-serif;
     text-align: center;
-    width: 60%;
+    width: 50%;
 }
 .style{
     margin-right: 4px;
@@ -531,26 +531,6 @@ a {
     font-size: 1.2em;
 }
 
-/*RESPONSIVIDADE*/
-
-@media screen and (orientation: portrait) {
-    .serv-pers-m {
-      display: flex; /*aparecer box serv-personalizados*/
-    }
-    .serv-pers-desktop{
-        display: none; /*sumir link serv-personalizados*/
-    }
-}
-
-@media screen and (orientation: landscape) {
-    .serv-pers-m {
-        display: none; /*sumir box serv-personalizados*/
-    }
-    .serv-pers{
-        display: block; /*aparecer link serv-personalizados*/
-    }
-}
-
 /* FRASE E SOBRE NÓS */
 .flex-container {
     position: relative;
@@ -612,18 +592,25 @@ a {
 .sessao-sobrenos {
     padding-left: 8%;
     padding-right: 8%;
-    padding-top: 4%;
     padding-bottom: 4%;
     width: 100%;
     height: auto;
     background: linear-gradient(to bottom, #f9f9f9, #fff);
 }
 
+#div-texto-sobrenos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
 #texto-sobrenos {
     text-align: center;
     font-size: 0.9em;
     letter-spacing: -2%;
-    margin-bottom: 6%;
+    margin-bottom: 4%;
+    width: 73%;
 }
 
 .mvv {
@@ -668,26 +655,36 @@ a {
 
 /*RESPONSIVIDADE*/
 @media screen and (orientation: portrait) {
+    /* SERVIÇO */
     .serv-pers-m {
-      display: flex; /*aparecer box serv-personalizados*/
+        display: flex; /*aparecer box serv-personalizados*/
     }
-    .serv-pers{
-        display: none; /*sumir link serv-personalizados*/
+    .serv-pers-desktop {
+          display: none; /*sumir link serv-personalizados*/
     }
+    /* FRASE E SOBRE NÓS */
     .sessao-frase-destacada {
         display: none;
     }
-    
     .blocos-mvv {
         width: 100%;
+    }
+    .icones-mvv-img {
+        width: 90px;
+        height: 90px;
+    }
+    #texto-sobrenos {
+        width: 100%;
+        padding-bottom: 5%;
     }
 }
 
 @media screen and (orientation: landscape) {
+    /* SERVIÇOS */
     .serv-pers-m {
         display: none; /*sumir box serv-personalizados*/
     }
-    .serv-pers{
+    .serv-pers-desktop {
         display: block; /*aparecer link serv-personalizados*/
     }
 }
@@ -713,12 +710,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 600;
-    color: #000000;
-    text-align: center;
-    font-size: 45px;
 }
 .container{
     display: flex;
@@ -800,7 +791,7 @@ a {
     border: none;
     color: #ffffff;
     font-weight: 400;
-    width: 4cm;
+    width: 2.5cm;
     height: 1cm;
     border-radius: 4px;
     float: right;
@@ -846,12 +837,12 @@ form{
     }
     .user{
         margin-bottom: 8px;
-        height: 81px;
+        height: 60px;
         width: 90%;
     }
     .user2{
         margin-bottom: 9px;
-        height: 81px;
+        height: 60px;
         width: 90%;
     }
     .user3{
@@ -862,10 +853,13 @@ form{
         display: flex;
         justify-content: center;
         width: 70%;
-        margin-bottom: 32px;
+        margin-bottom: 40px;
     }
     .text{
         font-size: 45px;
+    }
+    ::-webkit-input-placeholder{
+        font-size: 12px;
     }
 }
 
@@ -894,19 +888,16 @@ form{
 
 .img-texto-contatos{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
-    height: 50px;
+    height: 40px;
+    vertical-align: center;
 }
 .contatos-img{
-    width: 28.98px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
 .texto-contatos{
     font-size: 18px;
-    line-height: 28px;
-    text-align: justify;
     letter-spacing: -2%;
     font-weight: 400;
     padding-left: 5%; 
@@ -915,16 +906,19 @@ form{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .footer-endereco{
     display: flex;
-    flex-direction: row;
-    align-items: baseline;
+    align-items: center;
+    justify-content: center;
 }
 
 .localizacao-img{
     display: none;
 }
+
 .frase-logo{
     font-weight: 300;
     font-style: italic;
@@ -971,20 +965,18 @@ form{
 
 }
 .fundo-img{
-    max-width:462.7px;
+    max-width:460px;
     max-height:142px;
 
 }
 .mapa-img{
-    padding-top: 80%;
-    max-width:20.37px;
-    max-height:20.58px;
+    width: 20px;
+    height: 20px;
 }
 
 .frase-endereco{
     
-    width: 344.85px;
-    height: 52px;
+    width: 340px;
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
@@ -1017,8 +1009,8 @@ form{
 
     .localizacao-img{
         display: flex;
-        width: 28.98px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
 
     }
     .texto-contatos{
@@ -1031,8 +1023,8 @@ form{
         font-size: 14px;
         letter-spacing: -3%;
         font-weight: 400;
-        padding-left: 5%; 
         text-align: left;
+        padding: 0 0 0 5%;
     }
     .img-texto-contatos{
         padding-top:8;
@@ -1047,6 +1039,12 @@ form{
     }
     .frase-logo{
         font-size: 14px;
+    }
+    #footer-redes {
+        padding: 0 5% 5% 5%;
+    }
+    #localizacao-div {
+        padding: 5% 5% 5% 5%;
     }
 }
 
