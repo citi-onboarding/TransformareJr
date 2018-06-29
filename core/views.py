@@ -1,18 +1,21 @@
 from django.shortcuts import render
 from templated_email import send_templated_mail
 from .models import *
-# Create your views here.
+
+
 def index (request):
 
-    editaveis_var = editavei.objects.first()
-    
-    context = {
-        'visao': editaveis_var.visao,
-        'valores': editaveis_var.valores,
-        'missao': editaveis_var.missao,
-        'email': editaveis_var.email,
-        'telefone': editaveis_var.telefone,
-    } 
+    editaveis_var = editavei.objects.get()
+    if (editaveis_var):    
+        context = {
+            'visao': editaveis_var.visao,
+            'valores': editaveis_var.valores,
+            'missao': editaveis_var.missao,
+            'email': editaveis_var.email,
+            'telefone': editaveis_var.telefone,
+        }
+    else:
+        context = {} 
     
     if request.method == 'POST':
         nome=request.POST.get('nome')
@@ -33,8 +36,6 @@ def index (request):
             'assunto':assunto,
             'mensagem':mensagem
         },)
-
-
 
     return render(
         request, 
