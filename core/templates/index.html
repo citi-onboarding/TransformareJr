@@ -42,7 +42,7 @@
         </div>
         <div class="text" id="text_banner"> Transformando o Governo e a Sociedade</div>
         <div class="button_banner">
-            <a href="#SobreNos" class="scroll color_text">Conheça-nos</a>
+            <a href="#SobreNos" class="scroll color_text"><p>Conheça-nos</p></a>
         </div>
     </div>
 
@@ -108,16 +108,12 @@
         <div class="modal__dialog">
             <div class="modal__content">
                 <h1 class="titulo-modal">Assesoria ao Legislativo</h1>
-                <p class="subtitulo-modal"> Regularização </p>
-                <p class="texto-modal">Suporte e Assessoria no processo de regularização de entidades do terceiro setor, como Associações sem fins
-                    lucrativos, OSCIPs, entre outros.</p>
-                <p class="subtitulo-modal"> Captação de Recursos </p>
-                <p class="texto-modal">Focando nas Parceria Público-Privada e mecanismos de incentivos fiscais, entre outros, propomos estruturar
-                    e analisar projetos para viabilizar financeiramente, planejamento e busca de melhores portais e parceiros.
-                </p>
-                <p class="subtitulo-modal"> Diálogo entre Organização da Sociedade Civil e instituições do mercado</p>
-                <p class="texto-modal">Focados na prestação de consultorias e mediação de conflitos entre os dois setores, buscando negociações
-                    e pontos de concordância entre eles relacionado a algum projeto social.</p>
+                <p class="subtitulo-modal">Acompanhamento Parlamentar</p>
+                <p class="texto-modal">Mapeamento de todo os aspectos de voto de um parlamentar para identificar qual é o mais alinhado com as necessidades do cliente, além da análise de impacto desses trâmites e projetos parlamentares.</p>
+                <p class="subtitulo-modal">Relações Governamentais</p>
+                <p class="texto-modal">Buscando sempre a maior efetivação de projetos, com bases de estratégia, monitoramento e análise propomos alternativas para facilitar e compreensão do processo decisório de políticas públicas e para defesa de interesses.</p>
+                <p class="subtitulo-modal">Criação, regulamentação e análise de efetivação dos canais de participação popular internamente ao poder legislativo</p>
+                <p class="texto-modal">Analisar a efetividade e eficácia dos canais de comunicação popular com as câmaras legislativas para a concretização de políticas públicas participativas, como iniciativas de leis populares ou orçamento participativo.</p>
                     <div class="modal-container">
                         <div class="botao-modal">
                             <a href="#Contato" class="closeContact modal__close">Contate-nos</a>
@@ -238,13 +234,16 @@
         </div>
         <div class="sessao-sobrenos" id="SobreNos">
             <h1 class="cabeçalho-seçao">Sobre Nós</h1>
+            <div id="div-texto-sobrenos">
             <p id="texto-sobrenos">
                 Nós somos uma consultoria com soluções inovadoras, capacitações e treinamentos baseados em fundamentos de Governança Social
                 para o Impacto Social. Para tal, investimos em ações que englobam e conectam a sociedade.
                 <br>
-                <br> A Transformare Jr é organizada por alunos do Curso de Ciências do Estado da Universidade Federal de Minas
+                <br>
+                A Transformare Jr é organizada por alunos do Curso de Ciências do Estado da Universidade Federal de Minas
                 Gerais (UFMG), o qual criado no ano de 2009, foca em formar atores capazes de transformar e ampliar o diálogo
                 das instituições do governo com a sociedade. </p>
+            </div>
             <div class="mvv">
                 <div class="blocos-mvv" id="missao">
                     <div class="icones-mvv">
@@ -280,7 +279,7 @@
     <!--CONTATO-->
 
     <div class="back" id="Contato">
-        <div class="text">Contato</div>
+        <div class="cabeçalho-seçao text">Contato</div>
         <form method="POST" class="formulario" autocomplete="off">
             {% csrf_token %}
             <div class="container">
@@ -307,11 +306,10 @@
         <div class="footer-mapa">
             <div class="mapa-interativo">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.96664554709!2d-43.938907285580875!3d-19.92581034332353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699e686e23e61%3A0xfb45aeef3d8c0cd4!2sUFMG+Faculdade+de+Direito+e+Ci%C3%AAncias+do+Estado!5e0!3m2!1spt-BR!2sbr!4v1529284984301"
-                    width="462" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    width="400" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <div class="footer-endereco">
-                <div class="footer-localizacao">
-                    <img src="../../static/img/localizacao.png" alt="footer-localizacao" class="mapa-img"> </div>
+                <img src="../../static/img/localizacao.png" alt="footer-localizacao" class="mapa-img">
                 <div class="frase-endereco">
                     <p class="frase-endereco">Faculdade de Direito, Avenida João Pinheiro 100 - Centro, Belo Horizonte - MG, 30130-180</p>
                 </div>
@@ -325,19 +323,21 @@
                 <p>Pensar, empreender e transformar</p>
             </div>
         </div>
-        <div>
+        <div id="footer-redes">
             <div class="img-texto-contatos">
-                <img src="../../static/img/medium.png" alt="medium" class="contatos-img">
-                <p class="texto-contatos"> medium.com/transformareJr</p>
+                <a href="https://medium.com/@transformareej" target="_blank"><img src="../../static/img/medium.png" alt="medium" class="contatos-img"></a>
+                <p class="texto-contatos"><a href="https://medium.com/@transformareej" target="_blank">medium.com/@transformareej</a></p>
             </div>
             <div class="img-texto-contatos">
-                <img src="../../static/img/instagram.png" alt="instagram" class="contatos-img">
-                <p class="texto-contatos"> @transformarejunior</p>
+                <a href="https://www.instagram.com/transformarejunior/" target="_blank">
+                <img src="../../static/img/instagram.png" alt="instagram" class="contatos-img"> </a>
+                <p class="texto-contatos"><a href="https://www.instagram.com/transformarejunior/" target="_blank">@transformarejunior</a></p>
             </div>
 
             <div class="img-texto-contatos">
-                <img src="../../static/img/facebook.png" alt="facebook" class="contatos-img">
-                <p class="texto-contatos"> facebook.com/TransformareJunior</p>
+                <a href="https://www.facebook.com/TransformareJunior/" target="_blank">
+                <img src="../../static/img/facebook.png" alt="facebook" class="contatos-img"> </a>
+                <p class="texto-contatos"><a href="https://www.facebook.com/TransformareJunior/" target="_blank">facebook.com/TransformareJunior</a></p>
             </div>
 
             <div class="img-texto-contatos">
@@ -349,7 +349,7 @@
                 <img src="../../static/img/telefone.png" alt="telefone" class="contatos-img">
                 <p class="texto-contatos">{{telefone}}</p>
             </div>
-            <div class="img-texto-contatos">
+            <div class="img-texto-contatos" id="localizacao-div">
                 <img src="../../static/img/localizacao.png" alt="telefone" class="localizacao-img">
                 <p class="texto-endereco"> Faculdade de Direito, Avenida João Pinheiro 100 - Centro, Belo Horizonte - MG, 30130-180</p>
             </div>

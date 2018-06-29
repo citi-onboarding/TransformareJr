@@ -3,8 +3,8 @@ from templated_email import send_templated_mail
 from .models import *
 # Create your views here.
 def index (request):
-    
-    editaveis_var = editavei.objects.get()
+
+    editaveis_var = editavei.objects.first()
     
     context = {
         'visao': editaveis_var.visao,
@@ -12,7 +12,7 @@ def index (request):
         'missao': editaveis_var.missao,
         'email': editaveis_var.email,
         'telefone': editaveis_var.telefone,
-    }
+    } 
     
     if request.method == 'POST':
         nome=request.POST.get('nome')
