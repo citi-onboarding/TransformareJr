@@ -6,11 +6,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Transformare Jr.</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.ico' %}"/>
     <link rel="stylesheet" type="text/css" href="{% static 'slick/slick.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'slick/slick-theme.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}" />
-    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="{% static 'f-button/mfb.css' %}" />
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
 </head>
 
@@ -21,7 +23,7 @@
     <div class="banner" id="Inicio">
         <div class="navbar">
             <div class="logomarca">
-                <img src="../../static/img/Logo quadrada.png" id="logo">
+                <img src="{% static 'img/Logo quadrada.png' %}" id="logo" alt="logo-transformare">
                 <span class="style">Transformare</span>
                 <span class="style2">Jr.</span>
             </div>
@@ -53,7 +55,7 @@
         <div class="serv-container">
             <!-- Assessoria ao Legislativo -->
             <div class="serv-box">
-                <img class="serv-imagem" src="{% static 'img/ass-leg.png' %}">
+                <img class="serv-imagem" src="{% static 'img/ass-leg.png' %}" alt="ícone-legislativo">
                 <h3 class="serv-titulo">Assessoria ao Legislativo</h3>
                 <p class="serv-texto">Acompanhamento Parlamentar, Relações Governamentais e Participação Popular</p>
                 <div class="serv-botao">
@@ -64,7 +66,7 @@
             </div>
             <!-- Assessoria ao Executivo -->
             <div class="serv-box">
-                <img class="serv-imagem" src="{% static 'img/ass-exec.png' %}">
+                <img class="serv-imagem" src="{% static 'img/ass-exec.png' %}" alt="ícone-executivo">
                 <h3 class="serv-titulo">Assessoria ao Executivo</h3>
                 <p class="serv-texto">Elaboração de Políticas Públicas e Captação de Recursos</p>
                 <div class="serv-botao">
@@ -75,7 +77,7 @@
             </div>
             <!-- Terceiro Setor -->
             <div class="serv-box">
-                <img class="serv-imagem" src="{% static 'img/ter-setor.png' %}">
+                <img class="serv-imagem" src="{% static 'img/ter-setor.png' %}" alt="ícone-terceirosetor">
                 <h3 class="serv-titulo">Terceiro Setor</h3>
                 <p class="serv-texto">Apoio e desenvolvimento de Organizações da Sociedade Civil (OSCs)</p>
                 <div class="serv-botao">
@@ -86,7 +88,7 @@
             </div>
             <!-- Serviços Personalizados: Mobile -->
             <div class="serv-box serv-pers-m">
-                <img class="serv-imagem" src="{% static 'img/serv-pers.png' %}">
+                <img class="serv-imagem" src="{% static 'img/serv-pers.png' %}" alt="ícone-personalizados">
                 <h3 class="serv-titulo">Serviços Personalizados</h3>
                 <p class="serv-texto">Para demais serviços em consultoria política, governança criativa e administração pública consulte-nos.</p>
                 <div class="serv-pers-mobile">
@@ -132,7 +134,7 @@
         </div>
     </div>
 
-    <div id="modal2" class="modal  --align-top modal__bg" role="dialog" aria-hidden="true">
+    <div id="modal2" class="modal modal--align-top modal__bg" role="dialog" aria-hidden="true">
         <div class="modal__dialog">
             <div class="modal__content">
                 <h1 class="titulo-modal">Assesoria ao Executivo</h1>
@@ -222,17 +224,17 @@
     <!-- FRASE E SOBRE NÓS -->
 
     <div class="flex-container">
-        <div class="sessao-frase-destacada">
+        <div class="frase-destacada">
             <div id="barra-verde"></div>
             <div class="quote">
                 <div id="quote-mark">
-                    <img src="../../static/img/quote.png" alt="quote" id="quote-mark-img">
+                    <img src="{% static 'img/quote.png' %}" alt="quote" id="quote-mark-img">
                 </div>
                 <div id="frase-destacada">Pensar, empreender
                     <br> e transformar.</div>
             </div>
         </div>
-        <div class="sessao-sobrenos" id="SobreNos">
+        <div class="sobre-nos" id="SobreNos">
             <h1 class="cabeçalho-seçao">Sobre Nós</h1>
             <div id="div-texto-sobrenos">
             <p id="texto-sobrenos">
@@ -247,7 +249,7 @@
             <div class="mvv">
                 <div class="blocos-mvv" id="missao">
                     <div class="icones-mvv">
-                        <img src="../../static/img/target.png" alt="missão" class="icones-mvv-img">
+                        <img src="{% static 'img/target.png' %}" alt="missão" class="icones-mvv-img">
                     </div>
                     <h1 class="titulo-blocos-mvv">MISSÃO</h1>
                     <p class="texto-blocos-mvv">
@@ -256,7 +258,7 @@
                 </div>
                 <div class="blocos-mvv" id="visao">
                     <div class="icones-mvv">
-                        <img src="../../static/img/lighthouse.png" alt="visão" class="icones-mvv-img">
+                        <img src="{% static 'img/lighthouse.png' %}" alt="visão" class="icones-mvv-img">
                     </div>
                     <h1 class="titulo-blocos-mvv">VISÃO</h1>
                     <p class="texto-blocos-mvv">
@@ -265,7 +267,7 @@
                 </div>
                 <div class="blocos-mvv" id="valores">
                     <div class="icones-mvv">
-                        <img src="../../static/img/badge.png" alt="valores" class="icones-mvv-img">
+                        <img src="{% static 'img/badge.png' %}" alt="valores" class="icones-mvv-img">
                     </div>
                     <h1 class="titulo-blocos-mvv">VALORES</h1>
                     <p class="texto-blocos-mvv">
@@ -309,7 +311,7 @@
                     width="400" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <div class="footer-endereco">
-                <img src="../../static/img/localizacao.png" alt="footer-localizacao" class="mapa-img">
+                <img src="{% static 'img/localizacao.png' %}" alt="ícone-localizacao" class="mapa-img">
                 <div class="frase-endereco">
                     <p class="frase-endereco">Faculdade de Direito, Avenida João Pinheiro 100 - Centro, Belo Horizonte - MG, 30130-180</p>
                 </div>
@@ -317,7 +319,7 @@
         </div>
         <div class="footer-logo">
             <div class="footer-logo-box">
-                <img src="../../static/img/TransformarJr.png" alt="logocentral" class="logo-img">
+                <img src="{% static 'img/TransformarJr.png' %}" alt="logocentral" class="logo-img">
             </div>
             <div id="frase-logo">
                 <p>Pensar, empreender e transformar</p>
@@ -325,40 +327,41 @@
         </div>
         <div id="footer-redes">
             <div class="img-texto-contatos">
-                <a href="https://medium.com/@transformareej" target="_blank"><img src="../../static/img/medium.png" alt="medium" class="contatos-img"></a>
+                <a href="https://medium.com/@transformareej" target="_blank"><img src="{% static 'img/medium.png' %}" alt="medium" class="contatos-img"></a>
                 <p class="texto-contatos"><a href="https://medium.com/@transformareej" target="_blank">medium.com/@transformareej</a></p>
             </div>
             <div class="img-texto-contatos">
                 <a href="https://www.instagram.com/transformarejunior/" target="_blank">
-                <img src="../../static/img/instagram.png" alt="instagram" class="contatos-img"> </a>
+                <img src="{% static 'img/instagram.png' %}" alt="instagram" class="contatos-img"> </a>
                 <p class="texto-contatos"><a href="https://www.instagram.com/transformarejunior/" target="_blank">@transformarejunior</a></p>
             </div>
 
             <div class="img-texto-contatos">
                 <a href="https://www.facebook.com/TransformareJunior/" target="_blank">
-                <img src="../../static/img/facebook.png" alt="facebook" class="contatos-img"> </a>
+                <img src="{% static 'img/facebook.png' %}" alt="facebook" class="contatos-img"> </a>
                 <p class="texto-contatos"><a href="https://www.facebook.com/TransformareJunior/" target="_blank">facebook.com/TransformareJunior</a></p>
             </div>
 
             <div class="img-texto-contatos">
-                <img src="../../static/img/email.png" alt="email" class="contatos-img">
+                <img src="{% static 'img/email.png' %}" alt="email" class="contatos-img">
                 <p class="texto-contatos"><a href="mailto:{{email}}">{{email}}</a></p>
             </div>
 
             <div class="img-texto-contatos">
-                <img src="../../static/img/telefone.png" alt="telefone" class="contatos-img">
+                <img src="{% static 'img/telefone.png' %}" alt="telefone" class="contatos-img">
                 <p class="texto-contatos">{{telefone}}</p>
             </div>
             <div class="img-texto-contatos" id="localizacao-div">
-                <img src="../../static/img/localizacao.png" alt="telefone" class="localizacao-img">
-                <p class="texto-endereco"> Faculdade de Direito, Avenida João Pinheiro 100 - Centro, Belo Horizonte - MG, 30130-180</p>
+                <a href="https://goo.gl/maps/CZft5YCh4DH2" target="_blank"><img src="{% static 'img/localizacao.png' %}" alt="telefone" class="localizacao-img"></a>
+                <a href="https://goo.gl/maps/CZft5YCh4DH2" target="_blank">
+                <p class="texto-endereco"> Faculdade de Direito, Avenida João Pinheiro 100 - Centro, Belo Horizonte - MG, 30130-180</p></a>
             </div>
         </div>
     </div>
+
     <div class="copyright">
-        <div class="texto-copyright">
-            <p>Copyright © 2018 CITi</p>
-        </div>
+            <span>Copyright © 2018 CITi</span>
+            <span>Made with <i class="fas fa-code"></i> and <i class="far fa-heart"></i></span>
     </div>
     </div>
 

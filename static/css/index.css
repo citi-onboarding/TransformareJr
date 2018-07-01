@@ -131,25 +131,6 @@ a {
     text-decoration-color: #ffffff;
 }
  
-@media(orientation: portrait),(max-width: 710px){
-    #logo{
-        margin: 20px 0 20px 20px;
-        width: 57px;
-    }
-    .style{
-        font-size: 21px;
-    }
-    .style2{
-        font-size: 22px;
-    }
-    #text_banner{
-        font-size: 35px;  
-    }
-    #navbar-lista{
-        display: none;
-    }
-}
-
 /* SERVIÇOS */
 
 #Servicos {
@@ -544,7 +525,7 @@ a {
     width: 100%;
 }
 
-.sessao-frase-destacada {
+.frase-destacada {
     position: relative;
     display: flex;
     width: 100%;
@@ -592,7 +573,7 @@ a {
     margin-left: 1%;
 }
 
-.sessao-sobrenos {
+.sobre-nos {
     padding-left: 8%;
     padding-right: 8%;
     padding-bottom: 4%;
@@ -654,42 +635,6 @@ a {
 .texto-blocos-mvv {
     font-weight: 300;
     font-size: 0.9em;
-}
-
-/*RESPONSIVIDADE*/
-@media screen and (orientation: portrait) {
-    /* SERVIÇO */
-    .serv-pers-m {
-        display: flex; /*aparecer box serv-personalizados*/
-    }
-    .serv-pers-desktop {
-          display: none; /*sumir link serv-personalizados*/
-    }
-    /* FRASE E SOBRE NÓS */
-    .sessao-frase-destacada {
-        display: none;
-    }
-    .blocos-mvv {
-        width: 100%;
-    }
-    .icones-mvv-img {
-        width: 90px;
-        height: 90px;
-    }
-    #texto-sobrenos {
-        width: 100%;
-        padding-bottom: 5%;
-    }
-}
-
-@media screen and (orientation: landscape) {
-    /* SERVIÇOS */
-    .serv-pers-m {
-        display: none; /*sumir box serv-personalizados*/
-    }
-    .serv-pers-desktop {
-        display: block; /*aparecer link serv-personalizados*/
-    }
 }
 
 /* CONTATO */
@@ -817,55 +762,7 @@ form{
     width: 100%;
     height: 100%;
 }
- /*MEDIA CONTATO*/
-@media(orientation:portrait),(max-width:780px){      
-    .back{
-        height: 80vh;
-    }
-    .container{
-        flex-direction: column;
-        width: 70%;
-        margin-top: 43px;
-    }
-    .form1{
-        display: flex;
-        flex-direction: column;
-        margin-left: 25px;
-        width: 100%;
-    }
-    .form2{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    .user{
-        margin-bottom: 8px;
-        height: 60px;
-        width: 90%;
-    }
-    .user2{
-        margin-bottom: 9px;
-        height: 60px;
-        width: 90%;
-    }
-    .user3{
-        height: 126px;
-        width: 90%;
-    }
-    .button_submit{
-        display: flex;
-        justify-content: center;
-        width: 70%;
-        margin-bottom: 40px;
-    }
-    .text{
-        font-size: 45px;
-    }
-    ::-webkit-input-placeholder{
-        font-size: 12px;
-    }
-}
-
+ 
 /* FOOTER */
 
 .footer{
@@ -957,21 +854,14 @@ form{
 }
 
 .copyright{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #D2E2DF;
-    width:100%;
-    height:5%;
-    padding-top: 5px;
+    font-size: 0.7em;
+    padding: 5px 100px 5px 100px;
 }
 
-.texto-copyright{
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 23px;
-    text-align: left;
-    padding-left: 8%;
-    padding-right: 8%; 
-
-}
 .fundo-img{
     max-width:460px;
     max-height:142px;
@@ -997,6 +887,78 @@ form{
     display: none;
 }
 
+/* RESPONSIVIDADE */
+
+/* BANNER */
+@media(orientation: portrait),(max-width: 710px){
+    #logo{
+        margin: 20px 0 20px 20px;
+        width: 57px;
+    }
+    .style{
+        font-size: 21px;
+    }
+    .style2{
+        font-size: 22px;
+    }
+    #text_banner{
+        font-size: 35px;  
+    }
+    #navbar-lista{
+        display: none;
+    }
+}
+
+/* CONTATO */
+@media(orientation:portrait),(max-width:780px){      
+    .back{
+        height: 80vh;
+    }
+    .container{
+        flex-direction: column;
+        width: 70%;
+        margin-top: 43px;
+    }
+    .form1{
+        display: flex;
+        flex-direction: column;
+        margin-left: 25px;
+        width: 100%;
+    }
+    .form2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .user{
+        margin-bottom: 8px;
+        height: 60px;
+        width: 90%;
+    }
+    .user2{
+        margin-bottom: 9px;
+        height: 60px;
+        width: 90%;
+    }
+    .user3{
+        height: 126px;
+        width: 90%;
+    }
+    .button_submit{
+        display: flex;
+        justify-content: center;
+        width: 70%;
+        margin-bottom: 40px;
+    }
+    .text{
+        font-size: 45px;
+    }
+    ::-webkit-input-placeholder{
+        font-size: 12px;
+    }
+}
+
+/* FOOTER */
 @media (orientation:portrait) {
     .footer{
         display: flex;
@@ -1005,16 +967,6 @@ form{
     .footer-mapa{
         display: none;
     }
-    .copyright{
-        background-color: #D2E2DF;
-        width:100%;
-        height:5%;
-        line-height: 20px; 
-    }
-    .texto-copyright{
-        font-size: 14px;
-    }
-
     .localizacao-img{
         display: flex;
         width: 25px;
@@ -1055,7 +1007,47 @@ form{
         padding-top: 8px;
         padding-bottom: 10px
     }
+    .copyright {
+        padding: 6px; 
+        font-size: 0.5em;  
+    }
 }
+
+@media screen and (orientation: portrait) {
+    /* SERVIÇO */
+    .serv-pers-m {
+        display: flex; /*aparecer box serv-personalizados*/
+    }
+    .serv-pers-desktop {
+          display: none; /*sumir link serv-personalizados*/
+    }
+    /* FRASE E SOBRE NÓS */
+    .frase-destacada {
+        display: none;
+    }
+    .blocos-mvv {
+        width: 100%;
+    }
+    .icones-mvv-img {
+        width: 90px;
+        height: 90px;
+    }
+    #texto-sobrenos {
+        width: 100%;
+        padding-bottom: 5%;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    /* SERVIÇOS */
+    .serv-pers-m {
+        display: none; /*sumir box serv-personalizados*/
+    }
+    .serv-pers-desktop {
+        display: block; /*aparecer link serv-personalizados*/
+    }
+}
+
 
 /* F-BUTTON */
 .mfb-component--tl{
