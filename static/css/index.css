@@ -1021,6 +1021,13 @@ form{
     .serv-pers-desktop {
           display: none; /*sumir link serv-personalizados*/
     }
+    /* MODAL */
+    .subtitulo-modal {
+        font-size: 0.9em;
+    }
+    .texto-modal {
+        font-size: 0.9em;
+    }
     /* FRASE E SOBRE NÓS */
     .frase-destacada {
         display: none;
