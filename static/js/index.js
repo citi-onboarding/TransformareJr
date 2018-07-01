@@ -1,3 +1,4 @@
+// scroll
 jQuery(document).ready(function ($) {
     $('a[href*="#"]')
     .not('[href="#"]')
@@ -8,6 +9,7 @@ jQuery(document).ready(function ($) {
     });
 });
 
+// slick
 $(window).on('load resize orientationchange', function () {
     $('.serv-container').each(function () {
         var $carousel = $(this);
@@ -29,6 +31,7 @@ $(window).on('load resize orientationchange', function () {
     });
 });
 
+// modal
 var Modal = (function () {
 
     var trigger = $qsa('.modal__trigger'); // what you click to activate the modal
