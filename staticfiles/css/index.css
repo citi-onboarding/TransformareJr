@@ -148,7 +148,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding-bottom: 30px; /*espaço entre as caixas e o link*/
+    padding-bottom: 30px; /* espaço entre as caixas e o link*/
 }
 
 .serv-box {
