@@ -14,7 +14,7 @@ $(window).on('load resize orientationchange', function () {
     $('.serv-container').each(function () {
         var $carousel = $(this);
         // ativa o slick apenas em telas que width < height
-        if ($(window).width() > $(window).height()) {
+        if ($(window).width() > 1050) {
             if ($carousel.hasClass('slick-initialized')) {
                 $carousel.slick('unslick');
             }
