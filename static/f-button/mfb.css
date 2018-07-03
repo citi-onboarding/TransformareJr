@@ -669,7 +669,7 @@
 
 /*# sourceMappingURL=mfb.css.map */
 
-@media (orientation:portrait) {
+@media screen and (max-width:1050px) {
   .mfb-component--tl, .mfb-component--tr, .mfb-component--bl, .mfb-component--br {
    margin: 0 0 10px 0;
   }  
