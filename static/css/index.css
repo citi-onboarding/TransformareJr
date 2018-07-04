@@ -888,10 +888,17 @@ form{
     display: none;
 }
 
+#logo_citi{
+    width: 32px;
+}
+
 /* RESPONSIVIDADE */
 
 /* BANNER */
 @media screen and (max-width: 710px){
+    .banner{
+        height: 15cm;
+    }
     #logo{
         margin: 20px 0 20px 20px;
         width: 57px;
@@ -930,17 +937,17 @@ form{
     }
     .user{
         margin-bottom: 8px;
-        height: 60px;
-        width: 90%;
+        height: 40px;
+        width: 95%;
     }
     .user2{
         margin-bottom: 9px;
-        height: 60px;
-        width: 90%;
+        height: 40px;
+        width: 95%;
     }
     .user3{
-        height: 126px;
-        width: 90%;
+        height: 90px;
+        width: 95%;
     }
     .button_submit{
         display: flex;
@@ -1008,6 +1015,9 @@ form{
     .copyright {
         padding: 6px; 
         font-size: 0.5em;  
+    }
+    #logo_citi {
+        width: 22px;
     }
 }
 
