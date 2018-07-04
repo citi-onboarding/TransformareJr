@@ -897,7 +897,7 @@ form{
 /* BANNER */
 @media screen and (max-width: 710px){
     .banner{
-        height: 500px;
+        height: 480px;
     }
     #logo{
         margin: 20px 0 20px 20px;
